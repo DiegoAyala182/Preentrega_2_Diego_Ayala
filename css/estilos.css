@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+}
+
+/* HEADER */
+.bodyMain{
+    display: grid;
+    grid-template-columns: 1fr; 
+    background-image: url(../img/background\ mobile.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header_Main{
+    display: grid;
+    grid-template-columns: 1fr;     
+    justify-items: center;
+    align-items: center;
+    background-color: #c4c4c4;
+    overflow:hidden;
+    height: fit-content;
+}
+.logoMobile{
+    width: 200px;
+    height: 120px;
+}
+.navbar_ul{
+    display: grid;
+    justify-items:center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+li{
+    margin: 2px 0px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    list-style: none;
+}
+.a_navbar{
+    font-size: 16px;
+    text-decoration: none;
+    color: darkgreen;
+}
+.a_navbar:hover{
+    color: rgb(2, 26, 0);
+}
+
+/* MAIN INDEX */
+.fontMain{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.h1_mobile{
+    text-align: center;
+    margin: 30px 0px;
+    background-color: #c4c4c4;
+    
+}
+.articleMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.div_main{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 5px;
+    border: 1px solid darkgreen;
+    border-radius: 15px;
+    width: 330px;
+    height: 360px;
+    margin: 20px 0px;
+    text-align: center; 
+    background-color: #c4c4c4;  
+}
+.pMain{
+    color: rgb(46, 45, 45);
+    font-size: 18px;
+}
+.subtitleMain{
+    color: rgb(13, 66, 0);
+}
+/* boton vermás en index */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}   
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}   
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}   
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}   
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}   
+button:hover .circle {
+    width: 100%;
+}   
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}   
+button:hover .button-text {
+    color: #fff;
+}
+.a_VerMas{
+    text-decoration: none;
+    color: darkgreen;
+}
+.a_VerMas:hover{
+    color: #ffffff;
+}
+
+
+/* FOOTER */
+.sectionFooter{
+    display: grid;
+    grid-template-columns: 1fr;     
+    justify-items: center;
+    align-items: end;
+    background-color: #c4c4c4;
+    padding-top:10px;
+}
+.articleFooter{
+    display: flex;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.divFooter{    
+    margin: 0px 15px;    
+}
+.imgFooter_mobile{
+    height: 30px;
+    width: 30px;
+}
+
+/* SOBRE NOSOTROS */
+.articleSobreNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.colorGris{
+    background-color: #dfdede;
+    opacity: 0.9;
+}
+.center_h2{
+    display: flex;
+    justify-content: center;
+
+}
+.h2nuestraVsion{
+    margin: 50px 0px;
+    color: rgb(13, 66, 0);
+}
+.pNuestraVision{
+    color: rgb(46, 45, 45);
+    font-size: 18px;
+    margin:0px 40px 15px 40px;
+}
+.imgRetroexcavadoraSilueta{
+    height: 100px;
+    width: 100px;
+}
+.ImgEscalera{
+    display: none;
+}
+
+/* SERVICIOS */
+.subtitleServicios{
+    color: darkgreen;
+}
+.articleservicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.div_servicios{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 5px;
+    border: 1px solid darkgreen;
+    border-radius: 15px;
+    width: 330px;
+    height: 465px;
+    margin: 20px 0px;
+    text-align: center; 
+    background-color: #c4c4c4;  
+}
+
+/* CONTACTO */
+.sectionForm{
+    display: flex;
+    justify-content: center;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    background-color: #e9e3e3;
+    border-radius: 30px;
+    margin-bottom: 85px;
+}
+.divcontacto{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    margin: 2px 0px;    
+}
+textarea{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;    
+    height:200px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.respuesta:hover{
+    background-color: rgb(105, 105, 105);
+    color: #dcdddc;    
+} 
+.respuesta{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: inline-block;
+    margin-top: 25px;
+    width: 70px;
+    padding: 3px;
+    border-radius: 6px;
+    border: 1px solid black;    
+    text-align: center;
+    background-color: #dcdddc;   
+}
+input{
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/* NUESTRA FLOTA */
+.divImgFlota{
+    display: none;
+}
+.articleFlota{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.divFlota{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 5px;
+    border: 1px solid darkgreen;
+    border-radius: 15px;
+    width: 330px;
+    margin: 40px 0px;
+    text-align: center; 
+    background-color: #c4c4c4;
+}
+.pFlota{
+    margin-top: 5px;
+}
+.divFlota_1{
+    width:300px;
+}
+.videoYT{
+    width: 300px;
+    height: 180px;
+}
+
+/* TABLETS Y DESKTOP */
+@media (min-width: 1024px){
+    .bodyMain{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 120px 5fr 45px;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-column-gap: 12px;
+        grid-row-gap: 7px; 
+        background-image: url(../img/img.ppal.jpg);
+        background-attachment: fixed;   
+    }
+    header { grid-area: 1 / 1 / 2 / 5; }
+    main{ grid-area: 2 / 1 / 3 / 5; }
+    Footer{ grid-area: 4 / 1 / 4 / 5; }
+    /* HEADER */
+    #header_index{
+        display: grid;
+        grid-template-rows: auto auto;
+        background-color: #d1d1d1;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .logoDesktop{
+        width: 280px;
+        height: 160px;
+    }
+    .navbar{
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        width: 100vw;
+        height: 150px;
+    }
+    .navbar_ul{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 0px;
+        margin-left: 150px;
+    }
+    li{
+        margin: 2px 0px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        list-style: none;
+        padding: 0px 20px;
+        border-right: 2px solid darkgreen;
+        }
+        .a_navbar{
+            font-size: 18px;
+        }
+
+        /* MAIN */
+    .h1_transparente{
+        background-color: transparent;
+        color: transparent;
+        }
+    .articleMain{        
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 270px
+    }
+    .div_main{
+        display: grid;
+        justify-items: center;
+        align-items:flex-end;
+        width: 330px;
+        height: 400px;
+        margin: 20px 50px;
+        text-align: center; 
+        background-color: #e9e3e3; 
+    } 
+    button{
+        margin-bottom: 15px;        
+    }
+
+    /* FOOTER */
+    .articleFooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;     
+        justify-items: center;
+        align-items: center;
+        column-gap: 350px;
+        background-color: transparent; 
+        padding-top:10px;
+    }
+    .imgFooter_desktop{
+        height: 45px;
+        width: 45px;
+    }
+
+    /* SOBRE NOSOTROS */
+    .h1_visto{
+        display: flex;
+        justify-content: center;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 50px;
+        text-shadow: -1px 3px 3px rgb(67 129 61);
+        color: black;
+        background-color: transparent;
+        margin: 60px 0px 60px 0px;
+    }
+    .articleSobreNosotros{
+        display: flex;  
+        flex-direction: row;     
+        justify-content: center ;  
+        border: 1px solid darkgreen;  
+        border-radius: 15px;
+        width: 810px;
+        height: 580px;
+        margin:50px 0px 0px 520px; 
+        background-color: #e9e3e3   
+    }
+
+    /* SERVICIOS */
+    .subtitleServicios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 45px 0px;
+    }
+        .articleservicios{        
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px
+        }
+        .div_servicios{
+            display: flex;
+            flex-direction: column;
+            width: 485px;
+            height: 520px;
+            margin: 20px 50px;
+            text-align: center; 
+            background-color: #e9e3e3; 
+        } 
+        .pServicios{
+            font-size: 19px;
+        }
+
+    /* CONTACTO */
+    .formulario {
+        width: 600px;
+        height: 540px; 
+    }
+    .textarea{
+        height: 400px;
+        margin-top: 40px;    
+    }
+    .button_size{
+        height: 30px;
+        width: 110px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    /* NUESTRA FLOTA */
+    .sectionFlota{
+        display: flex;   
+        justify-content: center;
+        align-content: center;    
+    }
+    .articleFlota{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+        background-color: #e9e3e3;
+        border: 1px solid darkgreen;
+        border-radius: 5px;
+        width: 1000px;
+        height: 840px;    
+    }
+    .divImgFlota{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+        margin-right: 25px;
+        width: 1000px;
+        height: 830px;
+    }
+    .contenedorImg {
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }      
+    .contenedorImg img {
+        width: 100%;
+        height: 100%;
+        transition: all 1.5s ease-in-out;
+    }      
+    .contenedorImg:hover img {
+        transform: scale(1.2,1.2)
+    }
+    .divFlota{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        row-gap: 0px;
+        text-align: center;  
+        border: none;   
+        width: 100%;
+        background-color: transparent;
+        margin: 0px;
+    }
+    .imgRetroexcavadoraSilueta{
+        margin-top: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .h2Flota{
+        margin-bottom: 50px;
+        font-size: 30px;
+        color: darkgreen;
+    }
+    .pFlota{
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: justify;
+    }
+    .divFlota_1{
+        width: 450px;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .videoYT{
+        width: 460px;
+        height: 280px;
+    }
+    .yt_video{
+        margin: 40px 20px 0px 0px;
+        width: 455px;
+        align-items: center;
+    }
+}
+    
+
+
+
